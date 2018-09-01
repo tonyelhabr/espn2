@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1535840734830.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E90EFF82",
+    "lastKnownWriteTime" : 1535842127,
+    "last_content_update" : 1535842127624,
+    "path" : "~/packages/espn2/tests/testthat/test-ff.R",
+    "project_path" : "tests/testthat/test-ff.R",
+    "properties" : {
+        "cursorPosition" : "13,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

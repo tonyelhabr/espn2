@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1535841619538.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E4201D08",
+    "lastKnownWriteTime" : 1535840568,
+    "last_content_update" : 1535840568,
+    "path" : "~/packages/espn2/R/utils.R",
+    "project_path" : "R/utils.R",
+    "properties" : {
+        "cursorPosition" : "5,3",
+        "scrollLine" : "0",
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

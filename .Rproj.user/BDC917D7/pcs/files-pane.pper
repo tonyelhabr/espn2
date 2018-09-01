@@ -1,0 +1,9 @@
+{
+    "path" : "~/packages/espn2",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
