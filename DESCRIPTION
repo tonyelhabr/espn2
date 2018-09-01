@@ -1,9 +1,9 @@
 Package: espn2
-Title: API Wrapper for ESPN's API v2
+Title: Wrapper for ESPN's API v2
 Version: 0.0.0.9000
 Author: Tony ElHabr <anthonyelhabr@gmail.com>
 Authors@R: person('Tony', 'ElHabr', email = 'anthonyelhabr@gmail.com', role = c('aut', 'cre'))
-Description: This is a package for using ESPN's API v2.
+Description: An R package for interacting with ESPN's API v2.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
