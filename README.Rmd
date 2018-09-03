@@ -1,0 +1,77 @@
+---
+output: github_document
+---
+
+[![Project Status: WIP ? Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+
+
+```{r echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  comment = "#>",
+  fig.path = "man/README/README-"
+)
+```
+
+```{r eval = FALSE, echo = FALSE}
+viz_void <- ggplot2::ggplot() + ggplot2::theme_void()
+
+dir_logo <- file.path("man", "figures")
+if(!exists(dir_logo)) {
+  dir.create(dir_logo, recursive = TRUE)
+}
+path_logo <- file.path(dir_logo, paste0("logo.png"))
+hexSticker::sticker(
+  subplot = viz_void,
+  package = "espn2",
+  filename = path_logo,
+  p_y = 1.0,
+  p_color = "white",
+  # p_family = "sans",
+  p_size = 40,
+  h_size = 1.5,
+  h_color = "white",
+  h_fill = "red"
+)
+logo <- magick::image_read(path_logo)
+magick::image_write(magick::image_scale(logo, "120"), path = path_logo)
+# badgecreatr::badgeplacer(status = "wip", githubaccount = "tonyelhabr", githubrepo = "espn2")
+```
+
+# espn2 <img src="man/figures/logo.png" align="right"/>
+
+##  Introduction
+
+This package contains functions that I use often in projects.
+
+### Installation
+
+`devtools::install_github("tonyelhabr/espn2")`.
+
+## Notes
+
+Here is a list of all functions in the package.
+
+```{r echo = FALSE}
+library("espn2")
+ls("package:espn2")
+```
+
+### Inspiration
+
+...
+
+```{r include = FALSE, eval = FALSE}
+# print(covr::package_coverage())
+```
+
+### Syntax
+
+...
+
+
+## Examples
+
+Unfortunately, none (right now).
