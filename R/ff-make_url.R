@@ -3,6 +3,12 @@
 URL_BASE_FF <-
   "http://games.espn.com/ffl/api/v2"
 
+# NOTE: Examples of other potention endpoints:
+# + http://games.espn.com/ffl/scoreboard?leagueId=453218&scoringPeriodId=15
+# + http://games.espn.com/ffl/tools/finalstandings?leagueId=453218&seasonId=2017.
+# + http://games.espn.com/ffl/h2hplayoffs?leagueId=453218&seasonId=2017
+# + http://games.espn.com/ffl/boxscorequick?leagueId=453218&teamId=2&scoringPeriodId=13&seasonId=2017&view=scoringperiod&version=quick
+# + http://games.espn.com/ffl/boxscorefull?leagueId=453218&teamId=2&scoringPeriodId=13&seasonId=2017&view=scoringperiod&version=full
 
 #' Make a url for fantasy football data
 #'

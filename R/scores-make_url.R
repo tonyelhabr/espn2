@@ -1,6 +1,9 @@
 
 URL_BASE_SPORTS <- "http://site.api.espn.com/apis/site/v2/sports"
 
+# NOTE: Examples of other potention endpoints:
+# + http://games.espn.com/ffl/scoreboard?leagueId=453218&scoringPeriodId=15
+
 #' Make a url for scores
 #'
 #' @description Make a url for scores.

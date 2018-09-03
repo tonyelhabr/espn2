@@ -15,13 +15,13 @@ get_ff <-
   function(url = NULL, resp = NULL, ...) {
 
     if(is.null(url) & is.null(resp)) {
-      url <- make_url_scores(...)
+      url <- make_url_ff(...)
     }
 
     if(is.null(resp)) {
-      resp <- request_scores(url = url, ...)
+      resp <- request_ff(url = url, ...)
     }
 
-    data <- parse_scores(resp = resp, ...)
+    data <- parse_ff(resp = resp, ...)
     data
   }
