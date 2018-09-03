@@ -25,7 +25,7 @@ Here is a list of all functions in the package.
 
 ### Inspiration
 
-...
+<https://dusty-turner.netlify.com/post/mathlete-fantasy-football-analysis/>
 
 ### Syntax
 

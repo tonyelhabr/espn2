@@ -61,7 +61,8 @@ ls("package:espn2")
 
 ### Inspiration
 
-...
+https://dusty-turner.netlify.com/post/mathlete-fantasy-football-analysis/
+
 
 ```{r include = FALSE, eval = FALSE}
 # print(covr::package_coverage())

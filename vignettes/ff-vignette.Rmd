@@ -24,8 +24,53 @@ lid <- 453218
 ff <-
   tibble(yr = 2014L:2017L) %>%
   mutate(data = purrr::map(yr, ~espn2::get_ff(leagueId = lid, year = .x))) %>% 
-  unnest()
+  unnest() %>% 
+  filter(week <= 12) %>% 
+  arrange(yr, week)
 ff
+```
 
+```{r}
+ff_renamed <-
+  ff %>%
+  unite(tm_away, awayTeamLocation, awayTeamNickname, sep = " ") %>% 
+  unite(tm_home, homeTeamLocation, homeTeamNickname, sep = " ") %>% 
+  select(yr, wk = week, seasontype, tm_away, tm_home, pts_away = awayTeamScore, pts_home = homeTeamScore)
+ff_renamed
+
+ff_renamed %>% count(yr, wk, sort = TRUE)
+
+ff_tidy <-
+  ff_renamed %>% 
+  gather(tm_label, tm, matches("tm_")) %>% 
+  gather(pts_label, pts, matches("pts_")) %>% 
+  mutate_at(vars(matches("_label$")), funs(str_remove(., "tm_|pts_"))) %>% 
+  filter(tm_label == pts_label) %>% 
+  distinct() %>% 
+  # mutate_at(vars(pts_label), funs(pfa = if_else(. == tm_label, "for", "against"))) %>% 
+  rename(hf = tm_label)
+ff_tidy
+```
+
+```{r}
+ff_tidy %>% count(yr, wk)
+ff_tidy %>%
+  filter(wk <= 12) %>% 
+  count(yr, wk, sort = TRUE)
+ff_tidy %>% distinct()
+```
+
+```{r}
+plung <-
+  ff_tidy %>%
+  group_by(yr, wk) %>% 
+  mutate(pts_min = min(pts)) %>% 
+  ungroup() %>% 
+  filter(pts == pts_min) %>% 
+  select(-pts_min) %>% 
+  arrange(yr, wk)
+plung
+plung %>% filter(yr == max(yr))
+plung
 ```
 

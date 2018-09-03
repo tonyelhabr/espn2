@@ -18,7 +18,8 @@ Suggests:
     testthat,
     covr,
     knitr,
-    rmarkdown
+    rmarkdown,
+    tidyverse
 Depends:
     R (>= 3.4.1)
 VignetteBuilder: knitr
