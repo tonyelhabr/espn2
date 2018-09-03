@@ -11,7 +11,9 @@ RoxygenNote: 6.0.1
 Imports: 
     httr,
     tibble,
-    purrr
+    purrr,
+    dplyr,
+    jsonlite
 Suggests: testthat,covr
 Depends:
     R (>= 3.4.1)
